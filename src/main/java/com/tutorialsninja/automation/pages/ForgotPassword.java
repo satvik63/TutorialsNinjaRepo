@@ -6,20 +6,19 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.tutorialsninja.automation.base.Base;
 
-public class HeadersSection {
+public class ForgotPassword {
 	
-	public HeadersSection()
+	public ForgotPassword()
 	{
 		PageFactory.initElements(Base.driver, this);
 	}
+	
+	@FindBy(id="input-email")
+	public static WebElement forgotEmail;
+	
+	@FindBy(css="input[type='submit'][value='Continue']")
+	public static WebElement forgotContinue;
+	
+	
 
-	@FindBy(xpath="//span[text()=\"My Account\"]")
-	public static WebElement myAccountlink;
-	
-	@FindBy(linkText="Register")
-	public static WebElement register;
-	
-	@FindBy(linkText="Login")
-	public static WebElement login;
-	
 }
