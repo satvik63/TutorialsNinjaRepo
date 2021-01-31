@@ -22,4 +22,15 @@ public class HeadersSection {
 	@FindBy(linkText="Login")
 	public static WebElement login;
 	
+	@FindBy(css="input[name='search']")
+	public static WebElement searchBox;
+	
+	@FindBy(css="button[class='btn btn-default btn-lg']")
+	public static WebElement searchButton;
+	
+	
+	
+	
+	
+	
 }

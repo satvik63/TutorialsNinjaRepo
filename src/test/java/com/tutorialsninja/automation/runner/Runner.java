@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features= {"classpath:FeatureFiles"},
 glue= {"classpath:com.tutorialsninja.automation.stepdef"},
-tags= {"@Login"})
+tags= {"@Search"})
 public class Runner {
 
 }
